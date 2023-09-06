@@ -47,7 +47,7 @@ importers:
         version: 5.62.0(eslint@8.44.0)(typescript@4.9.5)
       code-style:
         specifier: git+https://github.com/OpenZeppelin/configs.git
-        version: github.com/OpenZeppelin/configs/0c7b3073da623d1112e4f9c3f186586167ab2d03
+        version: git@github.com+OpenZeppelin/configs/a6cd128e6f5225b15d76704708c5def97caa8176
       eslint:
         specifier: ^8.42.0
         version: 8.44.0
@@ -293,8 +293,8 @@ importers:
   packages/deploy:
     dependencies:
       '@ethersproject/abi':
-        specifier: ^5.6.3
-        version: 5.6.3
+        specifier: ^5.7.0
+        version: 5.7.0
       '@openzeppelin/defender-sdk-base-client':
         specifier: ^1.1.0
         version: link:../base
@@ -308,8 +308,8 @@ importers:
   packages/monitor:
     dependencies:
       '@ethersproject/abi':
-        specifier: ^5.6.3
-        version: 5.6.3
+        specifier: ^5.7.0
+        version: 5.7.0
       '@openzeppelin/defender-sdk-base-client':
         specifier: ^1.1.0
         version: link:../base
@@ -323,8 +323,8 @@ importers:
   packages/network:
     dependencies:
       '@ethersproject/abi':
-        specifier: ^5.6.3
-        version: 5.6.3
+        specifier: ^5.7.0
+        version: 5.7.0
       '@openzeppelin/defender-sdk-base-client':
         specifier: ^1.1.0
         version: link:../base
@@ -338,8 +338,8 @@ importers:
   packages/notification-channel:
     dependencies:
       '@ethersproject/abi':
-        specifier: ^5.6.3
-        version: 5.6.3
+        specifier: ^5.7.0
+        version: 5.7.0
       '@openzeppelin/defender-sdk-base-client':
         specifier: ^1.1.0
         version: link:../base
@@ -1064,20 +1064,6 @@ packages:
     dependencies:
       '@ethereumjs/common': 2.5.0
       ethereumjs-util: 7.1.5
-    dev: false
-
-  /@ethersproject/abi@5.6.3:
-    resolution: {integrity: sha512-CxKTdoZY4zDJLWXG6HzNH6znWK0M79WzzxHegDoecE3+K32pzfHOzuXg2/oGSTecZynFgpkjYXNPOqXVJlqClw==}
-    dependencies:
-      '@ethersproject/address': 5.7.0
-      '@ethersproject/bignumber': 5.7.0
-      '@ethersproject/bytes': 5.7.0
-      '@ethersproject/constants': 5.7.0
-      '@ethersproject/hash': 5.7.0
-      '@ethersproject/keccak256': 5.7.0
-      '@ethersproject/logger': 5.7.0
-      '@ethersproject/properties': 5.7.0
-      '@ethersproject/strings': 5.7.0
     dev: false
 
   /@ethersproject/abi@5.7.0:
@@ -8017,8 +8003,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  github.com/OpenZeppelin/configs/0c7b3073da623d1112e4f9c3f186586167ab2d03:
-    resolution: {tarball: https://codeload.github.com/OpenZeppelin/configs/tar.gz/0c7b3073da623d1112e4f9c3f186586167ab2d03}
+  git@github.com+OpenZeppelin/configs/a6cd128e6f5225b15d76704708c5def97caa8176:
+    resolution: {commit: a6cd128e6f5225b15d76704708c5def97caa8176, repo: git@github.com:OpenZeppelin/configs.git, type: git}
     name: code-style
     version: 0.1.0
     dev: true
